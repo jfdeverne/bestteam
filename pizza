@@ -1,0 +1,18 @@
+#!/usr/bin/python2.7
+pizza = [][]
+slices = []
+
+def main():
+    if (len(sys.argv) < 2):
+        print "error: specify input file name"
+        sys.exit(1)
+
+    filename = sys.argv[1]
+    f = open(filename, 'r')
+
+    #read the first row: constraints
+    file = f.read() #read in the file to string
+    constraints = file.readUntil('\n') #first line string, delimit by end of line
+    
+
+    f.close()
